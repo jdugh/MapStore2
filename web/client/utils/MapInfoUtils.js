@@ -233,7 +233,7 @@ export const services = {
  * @return {object} the registered component
  */
 export const getViewer = (type) => {
-    return !!MapInfoUtils.VIEWERS[type] ? MapInfoUtils.VIEWERS[type] : null;
+    return !!window['customViewers'][type] ? window['customViewers'][type] : null;
 };
 /**
  * To register a custom viewer
@@ -283,4 +283,6 @@ MapInfoUtils = {
     getLayerFeatureInfo,
     VIEWERS: {}
 };
+
+window['customViewers'] = MapInfoUtils.VIEWERS
 
