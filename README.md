@@ -1,3 +1,9 @@
+Fork of https://github.com/geosolutions-it/MapStore2 where we add :
+- backport of csw fix for catalog search (https://github.com/geosolutions-it/MapStore2/commit/553fcc87819e0cbffd13dcf48d0688bbe8e7d409)
+- custom variable to register custom viewers : to get the report extension working
+
+https://github.com/camptocamp/mapstore2-georchestra/ points to this branch
+
 ![Build Checks](https://github.com/geosolutions-it/MapStore2/actions/workflows/tests.yml/badge.svg?branch=master)
 [![Coverage Status](https://coveralls.io/repos/github/geosolutions-it/MapStore2/badge.svg?branch=master)](https://coveralls.io/github/geosolutions-it/MapStore2?branch=master)
 [![Documentation Status](https://readthedocs.org/projects/mapstore2/badge/?version=latest)](https://mapstore.readthedocs.io/en/latest/?badge=latest)
