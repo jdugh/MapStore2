@@ -15,10 +15,8 @@ import { addTransformer } from '../utils/PrintUtils';
 export const addPrintTransformerEpic = (action$) =>
     action$.ofType(ADD_PRINT_TRANSFORMER)
         .switchMap((action) => {
-            const {name, transformer, position} = action;
-            return Rx.Observable.of(
-                addTransformer(name, transformer, position)
-            );
+            addTransformer(action.name, action.transformer, action.position);
+            return Rx.Observable.empty();
         });
 
 export default {
